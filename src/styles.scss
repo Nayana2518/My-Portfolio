@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    line-height: 1;
+    font-size: 14px;
+    font-weight: normal;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    max-width: 1440px;
+    padding:0 20px;
+    margin:auto;
+}
+
+.text-darkgrey {
+    color:#2c2b2b;
+}
+
+.border-0 {
+    border:none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+
+.fw-bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+    margin:0;
+}
+
+h2 {
+    font-size: 22px;
+    margin:0;
+}
+
+h3 {
+    font-size: 20px;
+    margin:0;
+}
+
+h4 {
+    font-size: 18px;
+    margin:0;
+}
+
+h5 {
+    font-size: 16px;
+    margin:0;
+}
+
+.ft-14 {
+    font-size:14px;
+}
+
+.m-10 {
+    margin:10px;
+}
+
+.p-10 {
+    padding:10px;
+}
+
+.py-20 {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.box-shadow {
+    box-shadow: 0 1px 2px #2c2b2b;
+}
+
+.w-100 {
+    width:100%;
+}
+
+.w-90 {
+    width:90%;
+}
+
+.w-75 {
+    width:75%;
+}
+
+.w-60 {
+    width:60%;
+}
+
+.w-50 {
+    width:50%;
+}
+
+.w-40 {
+    width:40%;
+}
+
+.w-33 {
+    width:33.33%;
+}
+
+.w-25 {
+    width:25%;
+}
+
+.w-10 {
+    width:10%;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.position-fixed {
+    position:fixed;
+}

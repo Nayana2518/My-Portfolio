@@ -1,6 +1,33 @@
-<nav>
-  <a routerLink="">Home</a>
-  <a routerLink="about">About</a>
-  <a routerLink="projects">Projects</a>
-  <a routerLink="contact">Contact</a>
-</nav>
+<div class="sidebar p-4">
+    <div class="sidebar-inner h-100 d-flex flex-column">
+        <div class="row align-items-center mb-4">
+            <div class="col-5 text-center">
+                <img src="assets/images/profile.jpg" alt="Profile Picture"
+                    class="profile-img rounded-circle img-fluid" />
+            </div>
+            <div class="col-7">
+                <h1 class="mb-0 fw-semibold">Nayana TP</h1>
+                <small class="text-muted">Frontend Developer</small>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Navigation -->
+        <nav class="nav flex-column align-items-start gap-2 mt-3">
+            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                Home
+            </a>
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">
+                About
+            </a>
+            <a class="nav-link" routerLink="/projects" routerLinkActive="active">
+                Projects
+            </a>
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">
+                Contact
+            </a>
+        </nav>
+
+    </div>
+</div>

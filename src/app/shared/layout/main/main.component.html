@@ -1,7 +1,13 @@
 <div class="app-layout">
-    <app-navbar class="sidebar"></app-navbar>
+  <app-navbar class="navbar p-0"></app-navbar>
+
+  <div class="layout-container">
+    <app-sidebar></app-sidebar>
 
     <main class="content">
+      <div class="container-fluid p-3 p-md-4 p-lg-5 h-100">
         <router-outlet></router-outlet>
+      </div>
     </main>
+  </div>
 </div>

@@ -1,11 +1,17 @@
 .sidebar {
   width: 280px;
-  min-height: 100vh;
+  height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   z-index: 1000;
+}
+
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .profile-img {
@@ -41,6 +47,10 @@
   font-size: 1.1rem;
 }
 
+.sidebar-footer {
+  margin-top: auto; 
+}
+
 .sidebar-footer a {
   transition: all 0.3s ease;
 }
@@ -48,6 +58,10 @@
 .sidebar-footer a:hover {
   color: #0d6efd !important;
   transform: translateY(-2px);
+}
+
+.nav {
+  flex-grow: 1;
 }
 
 /* Tablet and below */
@@ -64,8 +78,11 @@
 
   .divider {
     margin: 10px !important;
+  } 
+  .sidebar-inner {
+    height: auto;
   }
-  
+
 }
 
 /* Mobile */
@@ -83,10 +100,15 @@
   }
   
   .nav-link {
-    padding: 0.5rem !important;
+    padding: 0.6rem !important;
   }
   
   .nav-link i {
     font-size: 1rem;
   }
+
+  .sidebar-footer {
+    margin-top: auto; 
+  }
+
 }

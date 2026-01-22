@@ -1,61 +1,11 @@
-<div class="sidebar bg-light h-100 border-end shadow-sm">
-    <div class="sidebar-inner h-100 flex-column p-3 p-md-4 pt-4 pt-md-5">
-        <!-- Profile Section -->
-        <div class="profile-section mb-3 mb-md-4">
-            <div class="row align-items-center g-2 g-md-3 p-2 p-md-3">
-                <div class="col-4 col-md-5">
-                    <div class="profile-img-wrapper">
-                        <img src="assets/images/profile.jpg" alt="Profile Picture"
-                            class="profile-img img-fluid rounded-circle shadow-sm border border-3 border-white" />
-                    </div>
-                </div>
-                <div class="col-8 col-md-7">
-                    <h2 class="mb-1 fw-bold text-dark fs-5 fs-md-4">Nayana TP</h2>
-                    <p class="mb-0 text-muted small">Frontend Developer</p>
-                </div>
-            </div>
-        </div>
+<nav class="navbar bg-white px-3 w-100 d-flex align-items-center">
+    <span class="fw-bold d-none d-lg-block">
+        Portfolio
+    </span>
 
-        <!-- Divider -->
-        <div class="divider border-top my-3 my-md-5"></div>
-
-        <!-- Navigation -->
-        <nav class="nav flex-column gap-2 gap-md-3 pb-3 pb-md-4 flex-grow-1">
-            <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/"
-                routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <i class="bi bi-house-door fs-5 me-2 me-md-3"></i>
-                <h4 class="mb-0 fs-6 fs-md-5">Home</h4>
-            </a>
-            <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/about"
-                routerLinkActive="active">
-                <i class="bi bi-person fs-5 me-2 me-md-3"></i>
-                <h4 class="mb-0 fs-6 fs-md-5">About</h4>
-            </a>
-            <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/projects"
-                routerLinkActive="active">
-                <i class="bi bi-folder fs-5 me-2 me-md-3"></i>
-                <h4 class="mb-0 fs-6 fs-md-5">Projects</h4>
-            </a>
-            <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/contact"
-                routerLinkActive="active">
-                <i class="bi bi-envelope fs-5 me-2 me-md-3"></i>
-                <h4 class="mb-0 fs-6 fs-md-5">Contact</h4>
-            </a>
-        </nav>
-
-        <!-- Footer Section -->
-        <div class="sidebar-footer mt-auto pt-2 pt-md-3 border-top">
-            <div class="d-flex justify-content-around gap-2 gap-md-3">
-                <a href="#" class="text-muted" title="LinkedIn">
-                    <i class="bi bi-linkedin fs-5"></i>
-                </a>
-                <a href="#" class="text-muted" title="GitHub">
-                    <i class="bi bi-chat-text fs-5"></i>
-                </a>
-                <a href="#" class="text-muted" title="Twitter">
-                    <i class="bi bi-telephone fs-5"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+    <button
+        class="btn btn-outline-primary d-lg-none ms-auto"
+        (click)="toggleMenu()">
+        <i class="bi bi-list fs-4"></i>
+    </button>
+</nav>

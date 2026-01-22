@@ -2,40 +2,20 @@
   min-height: 100vh;
 }
 
-app-sidebar {
-  flex: 0 0 280px;
-  width: 280px;
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 280px;
-  height: 100vh;
-  z-index: 1000;
-}
-
-/* Main content */
+/* Desktop */
 .content {
   margin-left: 280px;
-  min-height: 100vh;
 }
 
-.sidebar-inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+/* Overlay */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 999;
 }
 
-/* Mobile */
-@media (max-width: 575.98px) {
-  .content .container-fluid {
-    padding: 1rem !important;
-  }
-}
-
-/* Tablet and below */
+/* Tablet & Mobile */
 @media (max-width: 991.98px) {
   .content {
     margin-left: 0;

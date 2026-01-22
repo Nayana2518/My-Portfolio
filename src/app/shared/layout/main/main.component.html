@@ -1,8 +1,15 @@
 <div class="app-layout">
-  <app-navbar class="navbar p-0"></app-navbar>
+  <!-- Navbar -->
+  <app-navbar class="navbar p-0" (menuToggle)="toggleSidebar()">
+  </app-navbar>
 
-  <!-- Fixed Sidebar -->
-  <app-sidebar></app-sidebar>
+  <!-- Sidebar -->
+  <app-sidebar [class.open]="isSidebarOpen" (click)="closeSidebar()">
+  </app-sidebar>
+
+  <!-- Overlay (Tablet & Mobile only) -->
+  <div class="sidebar-overlay" *ngIf="isSidebarOpen" (click)="closeSidebar()">
+  </div>
 
   <!-- Main Content -->
   <main class="content">

@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterModule],
+  imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  @Output() menuToggle = new EventEmitter<void>();
 
+  toggleMenu() {
+    this.menuToggle.emit();
+  }
 }

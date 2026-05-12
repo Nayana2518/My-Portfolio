@@ -1,17 +1,181 @@
-<div class="home">
-  <h1 class="fw-bold display-5 display-md-4 mb-3 mb-md-4">
-    Hi, I'm Nayana TP
-  </h1>
+<!-- ===== HERO SECTION ===== -->
+<section class="hero-section">
+  <div class="hero-bg-circle circle-1"></div>
+  <div class="hero-bg-circle circle-2"></div>
 
-  <!-- <span class="d-inline-flex align-items-center gap-2 px-3 px-md-4 py-2 rounded-pill bg-success bg-opacity-10 text-success fw-semibold mb-3 mb-md-4 status-badge">
-    <span class="rounded-circle bg-success status-dot"></span>
-    <span class="badge-text">Available for Work</span>
-  </span> -->
+  <div class="hero-content">
+    <div class="available-badge">
+      <span class="badge-dot"></span>
+      Available for Work
+    </div>
 
-  <p class="mt-3 mt-md-4 fs-6 fs-md-5 text-muted">
-    Frontend Developer with hands-on experience in building scalable, high-performance web applications using
-    <strong>Angular (16/17)</strong> and <strong>Vue.js</strong>, delivering responsive enterprise dashboards,
-    secure admin platforms, and real-time REST API–driven interfaces focused on performance, usability,
-    and clean UI design.
-  </p>
-</div>
+    <h1 class="hero-title">
+      Hi, I'm <span class="highlight">Nayana TP</span>
+    </h1>
+
+    <p class="hero-role">Frontend Developer</p>
+
+    <p class="hero-bio">
+      Building scalable, high-performance web applications using
+      <strong>Angular</strong> and <strong>Vue.js</strong> — from responsive enterprise dashboards
+      to secure admin platforms and real-time REST API-driven interfaces.
+    </p>
+
+    <div class="hero-actions">
+      <a routerLink="/projects" class="btn-primary-custom">
+        View Projects <i class="bi bi-arrow-right ms-2"></i>
+      </a>
+      <a routerLink="/contact" class="btn-outline-custom">Contact Me</a>
+      <a href="assets/resume.pdf" download class="btn-ghost-custom">
+        <i class="bi bi-download me-2"></i>Resume
+      </a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://github.com/Nayana2518" target="_blank" title="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/your-id" target="_blank" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="mailto:your@email.com" title="Email">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS SECTION ===== -->
+<section class="section skills-section">
+  <div class="section-label">What I Work With</div>
+  <h2 class="section-title">Tech Stack</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon angular">
+        <i class="bi bi-layers"></i>
+      </div>
+      <h3>Angular</h3>
+      <p>16 / 17 — Standalone components, RxJS, lazy loading, reactive forms</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon vue">
+        <i class="bi bi-triangle"></i>
+      </div>
+      <h3>Vue.js</h3>
+      <p>Composition API, Vuex/Pinia, Vue Router, component architecture</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon ts">
+        <i class="bi bi-code-slash"></i>
+      </div>
+      <h3>TypeScript</h3>
+      <p>Strongly typed interfaces, generics, decorators, enums</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon api">
+        <i class="bi bi-arrow-left-right"></i>
+      </div>
+      <h3>REST APIs</h3>
+      <p>HttpClient, interceptors, real-time data integration, error handling</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon ui">
+        <i class="bi bi-palette"></i>
+      </div>
+      <h3>UI Design</h3>
+      <p>Bootstrap 5, Angular Material, SCSS, responsive & accessible design</p>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon tools">
+        <i class="bi bi-tools"></i>
+      </div>
+      <h3>Dev Tools</h3>
+      <p>Git, Angular CLI, npm, VS Code, Postman, Chrome DevTools</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE SECTION ===== -->
+<section class="section experience-section">
+  <div class="section-label">My Journey</div>
+  <h2 class="section-title">Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-meta">
+          <span class="timeline-date"><i class="bi bi-calendar3 me-1"></i> 2023 – Present</span>
+          <span class="timeline-badge current">Current</span>
+        </div>
+        <h3>Frontend Developer</h3>
+        <p class="company">Company Name</p>
+        <p class="timeline-desc">
+          Built and maintained enterprise dashboards using Angular 17. Integrated REST APIs,
+          improved performance, and designed reusable component libraries.
+        </p>
+        <div class="timeline-tags">
+          <span>Angular</span><span>TypeScript</span><span>REST API</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-meta">
+          <span class="timeline-date"><i class="bi bi-calendar3 me-1"></i> 2022 – 2023</span>
+        </div>
+        <h3>Junior Frontend Developer</h3>
+        <p class="company">Company Name</p>
+        <p class="timeline-desc">
+          Developed responsive UI components using Vue.js and Bootstrap.
+          Collaborated with backend teams on API integration and bug fixes.
+        </p>
+        <div class="timeline-tags">
+          <span>Vue.js</span><span>Bootstrap</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS SECTION ===== -->
+<section class="stats-section">
+  <div class="stat-item">
+    <span class="stat-number">2+</span>
+    <span class="stat-label">Years Experience</span>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <span class="stat-number">10+</span>
+    <span class="stat-label">Projects Completed</span>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <span class="stat-number">5+</span>
+    <span class="stat-label">Technologies</span>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <span class="stat-number">100%</span>
+    <span class="stat-label">Passion for UI</span>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section">
+  <div class="cta-glow"></div>
+  <h2>Let's Build Something <span class="highlight">Together</span></h2>
+  <p>Open to freelance, full-time, or collaborative opportunities.</p>
+  <div class="cta-actions">
+    <a routerLink="/contact" class="btn-primary-custom">Get In Touch</a>
+    <a routerLink="/projects" class="btn-outline-custom">See My Work</a>
+  </div>
+</section>

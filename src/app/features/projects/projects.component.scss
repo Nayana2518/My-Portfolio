@@ -1,0 +1,56 @@
+.badge-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--bs-primary);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.hero-blob-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(13, 110, 253, 0.06) 0%, transparent 70%);
+    top: -100px;
+    right: -80px;
+    pointer-events: none;
+}
+
+.hero-blob-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(13, 202, 240, 0.05) 0%, transparent 70%);
+    bottom: -60px;
+    left: -40px;
+    pointer-events: none;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 32px rgba(13, 110, 253, 0.15) !important;
+    }
+}
+
+.project-thumb {
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-num {
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 900;
+    opacity: 0.12;
+    bottom: -10px;
+    right: 16px;
+    line-height: 1;
+}

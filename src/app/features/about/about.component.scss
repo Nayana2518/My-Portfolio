@@ -1,0 +1,112 @@
+/* Only custom styles that Bootstrap cannot handle */
+
+.badge-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--bs-primary);
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Hero blobs */
+.hero-blob-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(13, 110, 253, 0.06) 0%, transparent 70%);
+    top: -100px;
+    right: -80px;
+    pointer-events: none;
+}
+
+.hero-blob-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(13, 202, 240, 0.05) 0%, transparent 70%);
+    bottom: -60px;
+    left: -40px;
+    pointer-events: none;
+}
+
+/* Avatar initials circle */
+.avatar-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #6366f1 100%);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.3);
+}
+
+/* Skills category label width */
+.skill-cat {
+    min-width: 130px;
+    font-size: 0.85rem;
+}
+
+/* Timeline dot */
+.tl-dot {
+    width: 14px;
+    height: 14px;
+    top: 1.35rem;
+    left: -2.55rem;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+/* Education icon box */
+.edu-icon {
+    width: 52px;
+    height: 52px;
+}
+
+/* Cert hover effect */
+.cert-hover {
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    cursor: default;
+
+    &:hover {
+        border-color: var(--bs-primary) !important;
+        transform: translateX(5px);
+    }
+}
+
+/* Learning dot */
+.learn-dot {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+}
+
+/* Interest chip hover */
+.interest-chip {
+    transition: all 0.2s ease;
+    cursor: default;
+
+    &:hover {
+        border-color: var(--bs-primary) !important;
+        color: var(--bs-primary) !important;
+        transform: translateY(-2px);
+    }
+}
+
+/* Responsive fix for skill rows on mobile */
+@media (max-width: 575.98px) {
+    .skill-row {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .skill-cat {
+        min-width: auto;
+    }
+}

@@ -1,0 +1,79 @@
+.badge-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--bs-primary);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.hero-blob-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(13, 110, 253, 0.06) 0%, transparent 70%);
+    top: -100px;
+    right: -80px;
+    pointer-events: none;
+}
+
+.hero-blob-2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(13, 202, 240, 0.05) 0%, transparent 70%);
+    bottom: -60px;
+    left: -40px;
+    pointer-events: none;
+}
+
+.contact-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.contact-info-item,
+.social-link {
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        border-color: var(--bs-primary) !important;
+        transform: translateX(4px);
+    }
+}
+
+.social-link {
+    cursor: pointer;
+}
+
+.avail-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+    }
+}
+
+.availability-card {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, #6366f1 100%) !important;
+}
+
+/* Form focus color */
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}

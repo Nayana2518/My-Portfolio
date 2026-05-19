@@ -1,22 +1,10 @@
-/* Only custom styles that Bootstrap cannot handle */
-
-.badge-label {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--bs-primary);
-    display: block;
-    margin-bottom: 6px;
-}
-
-/* Hero blobs */
+/* Teal/Navy — Professional Theme */
 .hero-blob-1 {
     position: absolute;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(13, 110, 253, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(13, 148, 136, 0.07) 0%, transparent 70%);
     top: -100px;
     right: -80px;
     pointer-events: none;
@@ -27,79 +15,82 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(13, 202, 240, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(8, 145, 178, 0.05) 0%, transparent 70%);
     bottom: -60px;
     left: -40px;
     pointer-events: none;
 }
 
-/* Avatar initials circle */
 .avatar-circle {
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--bs-primary) 0%, #6366f1 100%);
+    background: linear-gradient(135deg, #0d9488 0%, #0891b2 100%);
     color: #fff;
     font-size: 1.3rem;
     font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.3);
+    box-shadow: 0 6px 20px rgba(13, 148, 136, 0.35);
 }
 
-/* Skills category label width */
 .skill-cat {
     min-width: 130px;
     font-size: 0.85rem;
 }
 
-/* Timeline dot */
 .tl-dot {
-    width: 14px;
-    height: 14px;
-    top: 1.35rem;
-    left: -2.55rem;
-    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+    width: 13px;
+    height: 13px;
+    top: 2rem;
+    left: -2rem;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
 }
 
-/* Education icon box */
 .edu-icon {
     width: 52px;
     height: 52px;
 }
 
-/* Cert hover effect */
 .cert-hover {
     transition: border-color 0.2s ease, transform 0.2s ease;
     cursor: default;
 
     &:hover {
-        border-color: var(--bs-primary) !important;
+        border-color: #0d9488 !important;
         transform: translateX(5px);
     }
 }
 
-/* Learning dot */
 .learn-dot {
     width: 8px;
     height: 8px;
     display: inline-block;
+    background: #0d9488 !important;
 }
 
-/* Interest chip hover */
 .interest-chip {
     transition: all 0.2s ease;
     cursor: default;
 
     &:hover {
-        border-color: var(--bs-primary) !important;
-        color: var(--bs-primary) !important;
+        border-color: #0d9488 !important;
+        color: #0d9488 !important;
         transform: translateY(-2px);
     }
 }
 
-/* Responsive fix for skill rows on mobile */
+.contact-info-item,
+.social-link {
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        border-color: #0d9488 !important;
+        transform: translateX(4px);
+    }
+}
+
 @media (max-width: 575.98px) {
     .skill-row {
         flex-direction: column !important;

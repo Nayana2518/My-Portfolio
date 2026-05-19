@@ -5,39 +5,40 @@
             <div class="row align-items-center g-2 g-md-3 p-2 p-md-3">
                 <div class="col-4 col-md-5">
                     <div class="profile-img-wrapper">
-                        <img src="assets/images/profile.jpg" alt="Profile Picture"
-                            class="profile-img img-fluid rounded-circle shadow-sm border border-3 border-white" />
+                        <img src="./profile.png" alt="Profile Picture"
+                            class=" img-thumbnail profile-img img-fluid rounded-circle shadow-sm border border-3 border-white" />
                     </div>
                 </div>
-                <div class="col-8 col-md-7">
-                    <h2 class="mb-1 fw-bold text-dark fs-5 fs-md-4">Nayana TP</h2>
+                <div class="col-8 col-md-7 lh-base">
+                    <div class="mb-1 fw-bold text-black fs-4 fs-md-4">Nayana TP</div>
                     <p class="mb-0 text-muted small">Frontend Developer</p>
                 </div>
             </div>
         </div>
 
-        <!-- Divider -->
-        <div class="divider border-top my-3 my-md-5"></div>
-
         <!-- Navigation -->
         <nav class="nav flex-column gap-2 gap-md-3 pb-3 pb-md-4 flex-grow-1">
             <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/"
-                routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                (click)="onNavClick()">
                 <i class="bi bi-house-door fs-5 me-2 me-md-3"></i>
                 <span class="mb-0 fs-6 fs-md-5">Home</span>
             </a>
             <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/about"
-                routerLinkActive="active">
+                routerLinkActive="active"
+                (click)="onNavClick()">
                 <i class="bi bi-person fs-5 me-2 me-md-3"></i>
                 <span class="mb-0 fs-6 fs-md-5">About</span>
             </a>
             <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/projects"
-                routerLinkActive="active">
+                routerLinkActive="active"
+                (click)="onNavClick()">
                 <i class="bi bi-folder fs-5 me-2 me-md-3"></i>
                 <span class="mb-0 fs-6 fs-md-5">Projects</span>
             </a>
             <a class="nav-link d-flex align-items-center p-2 p-md-3 rounded-3 text-dark" routerLink="/contact"
-                routerLinkActive="active">
+                routerLinkActive="active"
+                (click)="onNavClick()">
                 <i class="bi bi-envelope fs-5 me-2 me-md-3"></i>
                 <span class="mb-0 fs-6 fs-md-5">Contact</span>
             </a>

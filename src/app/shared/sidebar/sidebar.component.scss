@@ -1,11 +1,18 @@
+/* =============================================
+   SIDEBAR — Dark Navy Professional Theme
+   ============================================= */
 .sidebar {
   width: 280px;
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  z-index: 1000;
+  background: #0f172a;
+  z-index: 1002;
+  border-right: 1px solid rgba(255,255,255,0.05);
+
+  /* Desktop: always visible, no transition needed */
+  transform: translateX(0);
 }
 
 .sidebar-inner {
@@ -14,101 +21,83 @@
   height: 100%;
 }
 
+/* Profile image */
 .profile-img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+.profile-img:hover { transform: scale(1.05); }
 
-.profile-img:hover {
-  transform: scale(1.05);
-}
+/* Profile name & title text */
+.profile-section h2 { color: #f1f5f9 !important; }
+.profile-section p  { color: #94a3b8 !important; }
 
+/* Divider */
+.divider { border-color: rgba(255,255,255,0.08) !important; }
+
+/* Nav links */
 .nav-link {
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   font-weight: 500;
-  color: #495057;
+  color: #94a3b8 !important;
+  border-radius: 10px;
+  margin: 2px 0;
+
+  span { color: inherit; }
+  i { color: #64748b; transition: color 0.25s ease; font-size: 1.1rem; }
+
+  &:hover {
+    background: rgba(13,148,136,0.12) !important;
+    color: #5eead4 !important;
+    transform: translateX(4px);
+    i { color: #5eead4; }
+  }
+
+  &.active {
+    background: linear-gradient(135deg, #0d9488 0%, #0891b2 100%) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(13,148,136,0.35);
+    i { color: #fff; }
+  }
 }
 
-.nav-link:hover {
-  background-color: rgba(13, 110, 253, 0.1);
-  color: #0d6efd;
-  transform: translateX(5px);
-}
-
-.nav-link.active {
-  background-color: #0d6efd;
-  color: white !important;
-  box-shadow: 0 4px 6px rgba(13, 110, 253, 0.2);
-}
-
-.nav-link i {
-  font-size: 1.1rem;
-}
-
-.sidebar-footer {
-  margin-top: auto; 
-}
+/* Footer social icons */
+.sidebar-footer { margin-top: auto; }
+.sidebar-footer .text-muted { color: #475569 !important; font-size: 0.72rem; letter-spacing: 0.05em; }
 
 .sidebar-footer a {
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
+  color: #64748b !important;
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.07);
+
+  &:hover {
+    color: #5eead4 !important;
+    background: rgba(13,148,136,0.15);
+    border-color: rgba(13,148,136,0.3);
+    transform: translateY(-2px);
+  }
 }
 
-.sidebar-footer a:hover {
-  color: #0d6efd !important;
-  transform: translateY(-2px);
-}
+.nav { flex-grow: 1; }
 
-.nav {
-  flex-grow: 1;
-}
-
-/* Tablet and below */
+/* ── Mobile & Tablet: slide in/out ── */
 @media (max-width: 991.98px) {
   .sidebar {
-    width: 100%;
-    position: relative;
-    min-height: auto;
-  }
-  
-  .nav-link h4 {
-    font-size: 1rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
   }
 
-  .divider {
-    margin: 10px !important;
-  } 
-  .sidebar-inner {
-    height: auto;
+  /* .open is added to <app-sidebar> host element by main.component */
+  :host(.open) .sidebar {
+    transform: translateX(0);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.3);
   }
-
-}
-
-/* Mobile */
-@media (max-width: 575.98px) {
-  .sidebar-inner {
-    padding: 1rem !important;
-  }
-  
-  .profile-section h2 {
-    font-size: 1.1rem !important;
-  }
-  
-  .profile-section p {
-    font-size: 0.8rem;
-  }
-  
-  .nav-link {
-    padding: 0.6rem !important;
-  }
-  
-  .nav-link i {
-    font-size: 1rem;
-  }
-
-  .sidebar-footer {
-    margin-top: auto; 
-  }
-
 }

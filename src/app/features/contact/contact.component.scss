@@ -1,19 +1,9 @@
-.badge-label {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--bs-primary);
-    display: block;
-    margin-bottom: 6px;
-}
-
 .hero-blob-1 {
     position: absolute;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(13, 110, 253, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(13, 148, 136, 0.07) 0%, transparent 70%);
     top: -100px;
     right: -80px;
     pointer-events: none;
@@ -24,7 +14,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(13, 202, 240, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(8, 145, 178, 0.05) 0%, transparent 70%);
     bottom: -60px;
     left: -40px;
     pointer-events: none;
@@ -40,7 +30,7 @@
     transition: border-color 0.2s ease, transform 0.2s ease;
 
     &:hover {
-        border-color: var(--bs-primary) !important;
+        border-color: #0d9488 !important;
         transform: translateX(4px);
     }
 }
@@ -69,11 +59,10 @@
 }
 
 .availability-card {
-    background: linear-gradient(135deg, var(--bs-primary) 0%, #6366f1 100%) !important;
+    background: linear-gradient(135deg, #0d9488 0%, #0891b2 100%) !important;
 }
 
-/* Form focus color */
 .form-control:focus {
-    border-color: var(--bs-primary);
-    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+    border-color: #0d9488 !important;
+    box-shadow: 0 0 0 0.2rem rgba(13, 148, 136, 0.18) !important;
 }

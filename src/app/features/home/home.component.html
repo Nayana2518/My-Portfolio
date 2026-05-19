@@ -1,44 +1,47 @@
 <!-- ===== HERO SECTION ===== -->
-<section class="hero-section">
+<section class="hero-section position-relative overflow-hidden p-5 rounded-4 shadow-sm bg-white mb-4">
     <div class="hero-bg-circle circle-1"></div>
     <div class="hero-bg-circle circle-2"></div>
 
     <div class="hero-content">
         <div class="available-badge">
             <span class="badge-dot"></span>
-            Available for Work
+            <!-- Available for Work -->
         </div>
 
-        <h1 class="hero-title">
-            Hi, I'm <span class="highlight">Nayana TP</span>
+        <h1 class="display-4 fw-bold text-dark lh-sm mb-2">
+            Hi, I'm <span class="highlight ft-18 fw-500">Nayana TP</span>
         </h1>
 
-        <p class="hero-role">Frontend Developer</p>
+        <p class="text-primary fw-semibold mb-3">Software Developer · Alice Blue Financial Services</p>
 
-        <p class="hero-bio">
-            Building scalable, high-performance web applications using
-            <strong>Angular</strong> and <strong>Vue.js</strong> — from responsive enterprise dashboards
-            to secure admin platforms and real-time REST API-driven interfaces.
+        <p class="text-secondary mb-3" style="line-height:1.8">
+            Frontend Developer at <strong>Alice Blue Financial Services</strong> with 2+ years of experience
+            building scalable web apps using <strong>Angular</strong> and <strong>Vue.js</strong> —
+            from real-time financial dashboards to secure admin platforms and REST API-driven interfaces.
         </p>
 
-        <div class="hero-actions">
-            <a routerLink="/projects" class="btn-primary-custom">
+        <div class="d-flex flex-wrap gap-3 mb-4">
+            <a routerLink="/projects" class="btn btn-success rounded-pill px-4 py-2 shadow-sm">
                 View Projects <i class="bi bi-arrow-right ms-2"></i>
             </a>
-            <a routerLink="/contact" class="btn-outline-custom">Contact Me</a>
-            <a href="assets/resume.pdf" download class="btn-ghost-custom">
+            <a routerLink="/contact" class="btn btn-outline-success rounded-pill px-4 py-2">Contact Me</a>
+            <a href="assets/resume.pdf" download class="btn btn-light border rounded-pill px-4 py-2">
                 <i class="bi bi-download me-2"></i>Resume
             </a>
         </div>
 
-        <div class="hero-socials">
-            <a href="https://github.com/Nayana2518" target="_blank" title="GitHub">
+        <div class="d-flex gap-3">
+            <a href="https://github.com/Nayana2518" target="_blank" title="GitHub" class="d-flex align-items-center justify-content-center
+        border rounded-3 text-secondary text-decoration-none" style="width:40px;height:40px;">
                 <i class="bi bi-github"></i>
             </a>
-            <a href="https://linkedin.com/in/your-id" target="_blank" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/nayana-tp-082556256" target="_blank" title="LinkedIn" class="d-flex align-items-center justify-content-center
+        border rounded-3 text-secondary text-decoration-none" style="width:40px;height:40px;">
                 <i class="bi bi-linkedin"></i>
             </a>
-            <a href="mailto:your@email.com" title="Email">
+            <a href="mailto:nayana2518@gmail.com" title="Email" class="d-flex align-items-center justify-content-center
+        border rounded-3 text-secondary text-decoration-none" style="width:40px;height:40px;">
                 <i class="bi bi-envelope"></i>
             </a>
         </div>
@@ -50,54 +53,77 @@
     <div class="section-label">What I Work With</div>
     <h2 class="section-title">Tech Stack</h2>
 
-    <div class="skills-grid">
-        <div class="skill-card">
-            <div class="skill-icon angular">
-                <i class="bi bi-layers"></i>
+    <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="skill-icon angular">
+                    <i class="bi bi-layers"></i>
+                </div>
+                <h2>Angular</h2>
+                <p class="ft-14-12 p-2">16 / 17 — Built Client 360 dashboard & Middleware Rise platform using standalone components, RxJS,
+                    lazy
+                    loading, interceptors & reactive forms</p>
             </div>
-            <h3>Angular</h3>
-            <p>16 / 17 — Standalone components, RxJS, lazy loading, reactive forms</p>
         </div>
 
-        <div class="skill-card">
-            <div class="skill-icon vue">
-                <i class="bi bi-triangle"></i>
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="skill-icon vue">
+                    <i class="bi bi-triangle"></i>
+                </div>
+                <h2>Vue.js</h2>
+                <p class="ft-14-12 p-2">Built the Rise investment platform using Composition API, Vuex/Pinia for state management & Vue
+                    Router
+                    for navigation</p>
             </div>
-            <h3>Vue.js</h3>
-            <p>Composition API, Vuex/Pinia, Vue Router, component architecture</p>
         </div>
 
-        <div class="skill-card">
-            <div class="skill-icon ts">
-                <i class="bi bi-code-slash"></i>
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="skill-icon ts">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <h2>Languages</h2>
+                <p class="ft-14-12 p-2">TypeScript & JavaScript for frontend logic — Java for backend fundamentals. Strongly typed, clean,
+                    and
+                    maintainable code</p>
             </div>
-            <h3>TypeScript</h3>
-            <p>Strongly typed interfaces, generics, decorators, enums</p>
         </div>
 
-        <div class="skill-card">
-            <div class="skill-icon api">
-                <i class="bi bi-arrow-left-right"></i>
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="skill-icon api">
+                    <i class="bi bi-arrow-left-right"></i>
+                </div>
+                <h2>REST APIs</h2>
+                <p class="ft-14-12 p-2">Integrated real-time financial APIs for SIP, mutual funds & portfolios. Handled interceptors, error
+                    handling & secure API calls</p>
             </div>
-            <h3>REST APIs</h3>
-            <p>HttpClient, interceptors, real-time data integration, error handling</p>
         </div>
 
-        <div class="skill-card">
-            <div class="skill-icon ui">
-                <i class="bi bi-palette"></i>
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="skill-icon ui">
+                    <i class="bi bi-palette"></i>
+                </div>
+                <h2>UI & Styling</h2>
+                <p class="ft-14-12 p-2">HTML5, CSS3, Bootstrap 5 — building responsive dashboards, admin panels & workflow UIs with clean,
+                    accessible design</p>
             </div>
-            <h3>UI Design</h3>
-            <p>Bootstrap 5, Angular Material, SCSS, responsive & accessible design</p>
         </div>
 
-        <div class="skill-card">
-            <div class="skill-icon tools">
-                <i class="bi bi-tools"></i>
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="skill-icon tools">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <h2>Security & Tools</h2>
+                <p class="ft-14-12 p-2">JWT Authentication, OAuth for secure access control. Git, Postman, Chrome DevTools & SQL for full
+                    development workflow</p>
             </div>
-            <h3>Dev Tools</h3>
-            <p>Git, Angular CLI, npm, VS Code, Postman, Chrome DevTools</p>
         </div>
+
     </div>
 </section>
 
@@ -109,37 +135,28 @@
     <div class="timeline">
         <div class="timeline-item">
             <div class="timeline-dot"></div>
-            <div class="timeline-card">
+            <div class="timeline-card p-2 rounded-4 border bg-light lh-lg">
                 <div class="timeline-meta">
-                    <span class="timeline-date"><i class="bi bi-calendar3 me-1"></i> 2023 – Present</span>
+                    <span class="timeline-date"><i class="bi bi-calendar3 me-1"></i> Apr 2024 – Present</span>
                     <span class="timeline-badge current">Current</span>
                 </div>
-                <h3>Frontend Developer</h3>
-                <p class="company">Company Name</p>
-                <p class="timeline-desc">
-                    Built and maintained enterprise dashboards using Angular 17. Integrated REST APIs,
-                    improved performance, and designed reusable component libraries.
-                </p>
-                <div class="timeline-tags">
-                    <span>Angular</span><span>TypeScript</span><span>REST API</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-                <div class="timeline-meta">
-                    <span class="timeline-date"><i class="bi bi-calendar3 me-1"></i> 2022 – 2023</span>
-                </div>
-                <h3>Junior Frontend Developer</h3>
-                <p class="company">Company Name</p>
-                <p class="timeline-desc">
-                    Developed responsive UI components using Vue.js and Bootstrap.
-                    Collaborated with backend teams on API integration and bug fixes.
-                </p>
-                <div class="timeline-tags">
-                    <span>Vue.js</span><span>Bootstrap</span><span>JavaScript</span>
+                <div class="ps-3">
+                    <h2>Software Developer</h2>
+                    <a href="https://aliceblueonline.com/"  target="_blank" class="company">Alice Blue Financial Services Pvt. Ltd. ·
+                        Bengaluru</a>
+                    <p class="timeline-desc ft-14-12 mt-1 mb-4">
+                        Developing scalable frontend applications for real-time financial platforms using
+                        Angular and Vue.js. Integrated REST APIs for SIP, mutual funds & portfolio data,
+                        built reusable UI components, and improved performance using lazy loading & code splitting.
+                    </p>
+                    <div class="timeline-tags">
+                        <span class="badge rounded-pill text-bg-light border text-success px-3 py-2">Angular 16/17</span>
+                        <span class="badge rounded-pill text-bg-light border text-success px-3 py-2">Vue.js</span>
+                        <span class="badge rounded-pill text-bg-light border text-success px-3 py-2">TypeScript</span>
+                        <span class="badge rounded-pill text-bg-light border text-success px-3 py-2">REST APIs</span>
+                        <span class="badge rounded-pill text-bg-light border text-success px-3 py-2">JWT Auth</span>
+                        <span class="badge rounded-pill text-bg-light border text-success px-3 py-2">Bootstrap</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,23 +164,23 @@
 </section>
 
 <!-- ===== STATS SECTION ===== -->
-<section class="stats-section">
-    <div class="stat-item">
+<section class="stats-section rounded-4 p-5 mb-4">
+    <div class="d-flex flex-column align-items-center text-center">
         <span class="stat-number">2+</span>
         <span class="stat-label">Years Experience</span>
     </div>
     <div class="stat-divider"></div>
-    <div class="stat-item">
-        <span class="stat-number">10+</span>
-        <span class="stat-label">Projects Completed</span>
+    <div class="d-flex flex-column align-items-center text-center">
+        <span class="stat-number">5 </span>
+        <span class="stat-label">Projects</span>
     </div>
     <div class="stat-divider"></div>
-    <div class="stat-item">
+    <div class="d-flex flex-column align-items-center text-center">
         <span class="stat-number">5+</span>
         <span class="stat-label">Technologies</span>
     </div>
     <div class="stat-divider"></div>
-    <div class="stat-item">
+    <div class="d-flex flex-column align-items-center text-center">
         <span class="stat-number">100%</span>
         <span class="stat-label">Passion for UI</span>
     </div>
@@ -174,7 +191,7 @@
     <div class="cta-glow"></div>
     <h2>Let's Build Something <span class="highlight">Together</span></h2>
     <p>Open to freelance, full-time, or collaborative opportunities.</p>
-    <div class="cta-actions">
+    <div class="d-flex justify-content-center flex-wrap gap-3">
         <a routerLink="/contact" class="btn-primary-custom">Get In Touch</a>
         <a routerLink="/projects" class="btn-outline-custom">See My Work</a>
     </div>

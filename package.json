@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href /My-Portfolio/ && copy dist\\my-portfolio\\browser\\index.html dist\\my-portfolio\\browser\\404.html && npx angular-cli-ghpages --dir=dist/my-portfolio/browser"
   },
   "private": true,
   "dependencies": {
